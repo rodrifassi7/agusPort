@@ -1,9 +1,11 @@
 ---
 // src/layouts/Layout.astro
-import Navbar from "../components/Navbar.astro";
+
 import Footer from "../components/Footer.astro";
+import Navbar from "../components/Navbar.astro";
+
 import "../styles/tailwind.css";
-import Proyects from "../pages/Proyects.astro";
+const { title } = Astro.props;
 ---
 
 <!doctype html>
@@ -11,14 +13,13 @@ import Proyects from "../pages/Proyects.astro";
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>{title}</title>
   </head>
-  <body class="bg-red-500">
-    <Navbar />
+  <body>
     <main>
-      <Proyects  />
+      <Navbar />
       <slot />
+      <Footer />
     </main>
-    <Footer />
   </body>
 </html>
