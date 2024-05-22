@@ -1,0 +1,68 @@
+---
+// src/pages/projects/FirstProject.astro
+
+import Layout from "../../layouts/Layout.astro";
+const title = "First Proyecto";
+---
+
+<Layout {title}>
+  <div class="flex flex-col items-center h-full mx-2">
+    <div class="h-56 overflow-hidden rounded-lg md:h-96">
+      <img
+        src="../../../public/firstProject.webp"
+        class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+        alt=""
+      />
+    </div>
+    <div class="text-center pt-12">
+      <h1 class="text-4xl">Gráficos esquemáticos</h1>
+      <h3>Subtitulo</h3>
+    </div>
+
+    <body>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-2 m-16 pt-10">
+        <div class="group relative overflow-hidden rounded-lg">
+          <figure>
+            <img
+              class="h-auto max-w-full"
+              src="../../../public/first/foto3.webp"
+              alt="Imagen 3"
+            />
+          </figure>
+          <div
+            class="overlay absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0"
+          >
+            <p class="text-white text-lg">Renders</p>
+          </div>
+        </div>
+        <div class="group relative overflow-hidden rounded-lg">
+          <img
+            class="h-auto max-w-full"
+            src="../../../public/first/foto1.webp"
+            alt="Imagen 1"
+          />
+          <div
+            class="overlay absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0"
+          >
+            <p class="text-white text-lg">Gráficos esquemáticos</p>
+          </div>
+        </div>
+
+        <div class="group relative overflow-hidden rounded-lg ">
+          <img
+            class="h-auto max-w-full"
+            src="../../../public/first/foto2.webp"
+            alt="Imagen 2"
+          />
+          <div
+            class="overlay absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0"
+          >
+            <p class="text-white text-lg">Centro social de salud y deporte</p>
+          </div>
+        </div>
+
+       
+      </div>
+    </body>
+  </div>
+</Layout>
