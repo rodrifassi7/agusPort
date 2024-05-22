@@ -1,0 +1,52 @@
+---
+// src/pages/projects/FirstProject.astro
+
+import Layout from "../../layouts/Layout.astro";
+const title = "Renders";
+---
+
+<Layout {title}>
+  <div class="overflow-hidden rounded-lg md:h-96 h-screen">
+    <img
+      src="/thirdProject.webp"
+      class="relative block max-w-full h-auto -translate-x-1/2 -translate-y-1/3 top-1/2 left-1/2"
+      alt="Gráficos esquemáticos"
+    />
+  </div>
+
+  <body>
+    <div class="text-center text-black mt-14">
+      <h1 class="text-4xl">{title}</h1>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-2 m-16 ">
+      <div class="group relative overflow-hidden rounded-lg">
+        <figure>
+          <img class="h-auto max-w-full" src="/foto3.webp" alt="Imagen 3" />
+        </figure>
+        <div
+          class="overlay absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0"
+        >
+        </div>
+      </div>
+      <div class="group relative overflow-hidden rounded-lg">
+        <img class="h-auto max-w-full" src="/foto1.webp" alt="Imagen 1" />
+        <div
+          class="overlay absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0"
+        >
+        </div>
+      </div>
+
+      <div class="group relative overflow-hidden rounded-lg">
+        <img
+          class="h-auto max-w-full"
+          src="/public/foto2.webp"
+          alt="Imagen 2"
+        />
+        <div
+          class="overlay absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0"
+        >
+        </div>
+      </div>
+    </div>
+  </body>
+</Layout>
