@@ -2,7 +2,12 @@
 
 ---
 
-<style>
+<style is:global>
+
+html {
+    scroll-behavior: smooth;
+    background-color: blue;
+  }
   .group:hover .overlay {
     opacity: 1;
     transition: opacity 0.3s;
@@ -14,7 +19,7 @@
 
 <body class="bg-gray-100">
   <div
-    class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-4 p-16 mt-10 md:h-screen"
+    class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-4 pt-16 mt-10 md:h-screen"
   >
     <div class="group relative overflow-hidden rounded-lg">
       <a href="/projects/graficosEsquematicos">
@@ -34,14 +39,16 @@
     <div class="group relative overflow-hidden rounded-lg">
       <a href="/projects/centroSocial">
         <img
-          class="h-auto max-w-full "
+          class="h-auto max-w-full"
           src="./cuartoProject.webp"
           alt="Imagen 2"
         />
         <div
           class="overlay absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0"
         >
-          <p class="text-white text-lg text-center">Centro social de salud y deporte</p>
+          <p class="text-white text-lg text-center">
+            Centro social de salud y deporte
+          </p>
         </div>
       </a>
     </div>
@@ -62,7 +69,7 @@
       </a>
     </div>
     <div class="group relative overflow-hidden rounded-lg">
-      <a href="/projects/centroSocial">
+      <a href="/projects/equipamiento">
         <img
           class="h-auto max-w-full"
           src="./secondProject.webp"

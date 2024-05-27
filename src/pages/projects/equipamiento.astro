@@ -2,20 +2,19 @@
 // src/pages/projects/FirstProject.astro
 
 import Layout from "../../layouts/Layout.astro";
-const title = "Gráficos esquemáticos";
-const srcImg = "/public/firstProject.webp";
+const title = "Equipamiento";
+const srcImg = "/public/secondProject.webp";
 ---
 
 <Layout {title}>
-  <div class="h-screen flex flex-col ">
+  <div class="h-screen flex flex-col">
     <div class="flex-1 flex justify-center items-center max-h-[80%]">
       <img src={srcImg} class="h-auto max-h-full" alt={title} />
     </div>
     <div class="h-24 flex items-center justify-center">
-      <h1 class="text-4xl text-black"> {title}</h1>
+      <h1 class="text-4xl text-black">{title}</h1>
     </div>
   </div>
-  
 
   <body>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-2 m-16">
@@ -29,10 +28,8 @@ const srcImg = "/public/firstProject.webp";
         </div>
       </div>
       <div class="group relative overflow-hidden rounded-lg">
-        <img class="h-auto max-w-full" src="/foto1.webp" alt="Imagen 1" />
-        <div
-          class="overlay absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0"
-        >
+        <div>
+            <p>Este proyecto fue desarrollado para la materia de Equipamiento, donde se nos asignó la tarea de diseñar un monoambiente utilizando madera y metal como materiales principales. El objetivo era crear un espacio multifuncional que pudiera satisfacer diversas actividades diarias básicas, como dormir, comer y asearse, además de ofrecer la posibilidad de estudiar, recibir visitas que se queden a dormir, recibir gente en planta baja y realizar yoga en el mismo espacio. Se puso especial énfasis en la flexibilidad del diseño para que el área destinada a la práctica de yoga pudiera separarse de la cocina, garantizando así un entorno adaptable y funcional que responde a las necesidades de un estilo de vida moderno y versátil</p>
         </div>
       </div>
 

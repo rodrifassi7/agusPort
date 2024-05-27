@@ -2,52 +2,47 @@
 // src/pages/projects/FirstProject.astro
 
 import Layout from "../../layouts/Layout.astro";
+import ArrowDown from "../../components/ArrowDown.astro";
+
 const title = "Centro social de salud y deporte";
+const srcImg = "/public/cuartoProject.webp";
 ---
 
 <Layout {title}>
-  <div class="overflow-hidden rounded-lg md:h-96 h-screen">
-    <img
-      src="/public//cuartoProject.webp"
-      class="relative block max-w-full h-auto -translate-x-1/2 -translate-y-1/3 top-1/2 left-1/2"
-      alt="Gráficos esquemáticos"
-    />
+  <div class="h-screen flex flex-col">
+    <div class="flex-1 flex justify-center items-center max-h-[80%]">
+      <img src={srcImg} class="h-auto max-h-full" alt={title} />
+    </div>
+    <div class="flex justify-center pt-7 animate-bounce">
+      <a href="#experiencia" class="scroll-smooth">
+        <ArrowDown />
+      </a>
+    </div>
   </div>
 
   <body>
-    <div class="text-center text-black m-14">
-      <h1 class="text-4xl">{title}</h1>
+    <div class="h-24 flex items-center justify-center">
+      <h1 class="text-4xl text-black">{title}</h1>
     </div>
-
     <div class="grid grid-cols-1 md:grid-cols-2 gap-3 p-16">
-      <div class="grid gap-2">
+      <div id="experiencia" class="grid gap-2 h-screen">
         <div>
-          <img
-            class="h-auto max-w-full rounded-lg"
-            src="/public/centro1.webp"
-            alt=""
-          />
+          <p class="text-pretty">
+            Este trabajo fue realizado para la materia de Arquitectura 5 y se
+            ubica en el barrio Libertador de la ciudad de Córdoba, una zona
+            habitada principalmente por emigrantes y personas de escasos
+            recursos. Debido a la distancia que separa este barrio del centro de
+            la ciudad, se propuso un enfoque que incluya tanto actividades
+            culturales y deportivas como servicios de revisión médica. Este
+            proyecto busca mejorar la calidad de vida de los residentes al
+            ofrecerles acceso a actividades recreativas y a atención sanitaria
+            básica dentro de su propia comunidad.​
+          </p>
         </div>
         <div>
           <img
             class="h-auto max-w-full rounded-lg"
-            src="/public/centro2.webp"
-            alt=""
-          />
-        </div>
-      </div>
-      <div class="grid gap-3">
-        <div>
-          <img
-            class="h-auto max-w-full rounded-lg"
-            src="/public/centro5.webp"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            class="h-auto max-w-full rounded-lg"
-            src="/public/centro6.webp"
+            src="/centro2.webp"
             alt=""
           />
         </div>
@@ -56,7 +51,14 @@ const title = "Centro social de salud y deporte";
         <div>
           <img
             class="h-auto max-w-full rounded-lg"
-            src="/public/centro7.webp"
+            src="/centro5.webp"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="/centro6.webp"
             alt=""
           />
         </div>
@@ -65,7 +67,21 @@ const title = "Centro social de salud y deporte";
         <div>
           <img
             class="h-auto max-w-full rounded-lg"
-            src="/public/centro4.webp"
+            src="/centro7.webp"
+            alt=""
+          />
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="/centro1.webp"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="grid gap-3">
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="/centro4.webp"
             alt=""
           />
         </div>
@@ -73,7 +89,7 @@ const title = "Centro social de salud y deporte";
         <div>
           <img
             class="h-auto max-w-full rounded-lg"
-            src="/public/centro3.webp"
+            src="/centro3.webp"
             alt=""
           />
         </div>

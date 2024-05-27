@@ -3,21 +3,20 @@
 
 import Layout from "../../layouts/Layout.astro";
 const title = "Renders";
+const srcImg = "/thirdProject.webp";
 ---
 
 <Layout {title}>
-  <div class="overflow-hidden rounded-lg md:h-96 h-screen">
-    <img
-      src="/thirdProject.webp"
-      class="relative block max-w-full h-auto -translate-x-1/2 -translate-y-1/3 top-1/2 left-1/2"
-      alt="Gráficos esquemáticos"
-    />
+  <div class="h-screen flex flex-col">
+    <div class="flex-1 flex justify-center items-center max-h-[80%]">
+      <img src={srcImg} class="h-auto max-h-full" alt={title} />
+    </div>
+    <div class="h-24 flex items-center justify-center">
+      <h1 class="text-4xl text-black">{title}</h1>
+    </div>
   </div>
 
   <body>
-    <div class="text-center text-black m-14">
-      <h1 class="text-4xl">{title}</h1>
-    </div>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-2 m-16">
       <div class="group relative overflow-hidden rounded-lg">
         <figure>
