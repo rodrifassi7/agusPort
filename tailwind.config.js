@@ -4,8 +4,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        work: ['Work Sans', 'sans-serif'],
-        forum: ['Forum', 'serif'],
+        work: ["Work Sans", "sans-serif"],
+        forum: ["Forum", "serif"],
       },
     },
   },
