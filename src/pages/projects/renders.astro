@@ -1,62 +1,64 @@
 ---
 // src/pages/projects/FirstProject.astro
-
 import Layout from "../../layouts/Layout.astro";
+import ArrowDown from "../../components/ArrowDown.astro";
+
 const title = "Renders";
 const srcImg = "/thirdProject.webp";
 ---
 
 <Layout {title}>
-  <div class="h-screen flex flex-col">
-    <div class="flex-1 flex justify-center items-center max-h-[80%]">
-      <img src={srcImg} class="h-auto max-h-full" alt={title} />
+  <main class="md:mx-20">
+    <div class="h-screen flex flex-col">
+      <div class="flex-1 flex justify-center items-center max-h-[80%]">
+        <img src={srcImg} class="h-auto max-h-full" alt={title} />
+      </div>
+      <div class="flex justify-center md:pt-9 md:-mt-0 -mt-24 animate-bounce">
+        <a href="#experiencia" class="scroll-smooth">
+          <ArrowDown />
+        </a>
+      </div>
     </div>
-    <div class="h-24 flex items-center justify-center">
-      <h1 class="text-4xl text-black">{title}</h1>
-    </div>
-  </div>
 
-  <body>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-2 m-16">
-      <div class="group relative overflow-hidden rounded-lg">
-        <figure>
-          <img class="h-max max-w-full" src="/render2.webp" alt="render2" />
-        </figure>
-        <div
-          class="overlay absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0"
-        >
-        </div>
+    <div id="experiencia" class="pt-20">
+      <div class="mb-11 h-24 flex items-center justify-center text-center">
+        <h1 class="text-4xl text-black font-semibold">{title}</h1>
       </div>
-      <div class="group relative overflow-hidden rounded-lg">
-        <img
-          class="h-auto max-w-full"
-          src="/render3.webp"
-          alt="render3"
-        />
-        <div
-          class="overlay absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0"
-        >
-        </div>
-      </div>
-      <div class="group relative overflow-hidden rounded-lg">
-        <img class="h-auto max-w-full" src="/render1.webp" alt="render1" />
-        <div
-          class="overlay absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0"
-        >
-        </div>
-      </div>
-
-      <div class="group relative overflow-hidden rounded-lg">
-        <img
-          class="h-auto max-w-full"
-          src="/render4.webp"
-          alt="render4"
-        />
-        <div
-          class="overlay absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0"
-        >
-        </div>
+      <div class="md:flex md:flex-row-reverse flex-col-reverse mt-5 md:mt-0">
       </div>
     </div>
-  </body>
+    <body>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-16">
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="/render1.webp"
+            alt="imagen del proyecto de centro Social de salud y deporte"
+          />
+        </div>
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="/render2.webp"
+            alt="imagen del proyecto de centro Social de salud y deporte"
+          />
+        </div>
+
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="/render3.webp"
+            alt="imagen del proyecto de centro Social de salud y deporte"
+          />
+        </div>
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="/render4.webp"
+            alt="imagen del proyecto de centro Social de salud y deporte"
+          />
+        </div>
+      </div>
+    </body>
+  </main>
 </Layout>

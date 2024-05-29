@@ -2,47 +2,54 @@
 // src/pages/projects/FirstProject.astro
 
 import Layout from "../../layouts/Layout.astro";
+import ArrowDown from "../../components/ArrowDown.astro";
 const title = "Gráficos esquemáticos";
 const srcImg = "/firstProject.webp";
 ---
 
 <Layout {title}>
-  <div class="h-screen flex flex-col ">
-    <div class="flex-1 flex justify-center items-center max-h-[80%]">
-      <img src={srcImg} class="h-auto max-h-full" alt={title} />
+  <main class="md:mx-20">
+    <div class="h-screen flex flex-col">
+      <div class="flex-1 flex justify-center items-center max-h-[80%]">
+        <img src={srcImg} class="h-auto max-h-full" alt={title} />
+      </div>
+      <div class="flex justify-center md:pt-9 md:-mt-0 -mt-24 animate-bounce">
+        <a href="#experiencia" class="scroll-smooth">
+          <ArrowDown />
+        </a>
+      </div>
     </div>
-    <div class="h-24 flex items-center justify-center">
-      <h1 class="text-4xl text-black"> {title}</h1>
-    </div>
-  </div>
-  
 
-  <body>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-2 m-16">
-      <div class="group relative overflow-hidden rounded-lg">
-        <figure>
-          <img class="h-auto max-w-full" src="/foto3.webp" alt="Imagen 3" />
-        </figure>
-        <div
-          class="overlay absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0"
-        >
-        </div>
+    <div id="experiencia" class="pt-20">
+      <div class="mb-7 h-24 flex items-center justify-center text-center">
+        <h1 class="text-4xl text-black font-semibold">{title}</h1>
       </div>
-      <div class="group relative overflow-hidden rounded-lg">
-        <img class="h-auto max-w-full" src="/foto1.webp" alt="Imagen 1" />
-        <div
-          class="overlay absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0"
-        >
+    </div>
+    <body>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="/foto3.webp"
+            alt="imagen del proyecto de centro Social de salud y deporte"
+          />
+        </div>
+        <div>
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src="/foto2.webp"
+            alt="imagen del proyecto de centro Social de salud y deporte"
+          />
         </div>
       </div>
 
-      <div class="group relative overflow-hidden rounded-lg px-auto">
-        <img class="h-auto max-w-full" src="/foto2.webp" alt="Imagen 2" />
-        <div
-          class="overlay absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0"
-        >
-        </div>
+      <div class="mx-auto md:max-h-[50%] md:max-w-[50%]">
+        <img
+          class="h-auto max-w-full rounded-lg"
+          src="/foto1.webp"
+          alt="imagen del proyecto de centro Social de salud y deporte"
+        />
       </div>
-    </div>
-  </body>
+    </body>
+  </main>
 </Layout>
