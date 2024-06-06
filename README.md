@@ -1,54 +1,33 @@
-# Astro Starter Kit: Basics
+# Portfolio de Agustina
 
-```sh
-npm create astro@latest -- --template basics
-```
+Bienvenido al portfolio de Agustina. Este sitio web ha sido desarrollado para mostrar los proyectos destacados y la trayectoria profesional de Agustina, utilizando las tecnologías Astro y Tailwind CSS para crear una experiencia visualmente atractiva y altamente funcional.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## Tecnologías Utilizadas
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+- **Astro**: Un framework moderno de desarrollo web que permite construir sitios web rápidos y optimizados.
+- **Tailwind CSS**: Una utility-first CSS framework para crear diseños personalizados sin esfuerzo.
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## Características del Portfolio
 
-## 🚀 Project Structure
+- **Proyectos Destacados**: Una sección dedicada a los proyectos más importantes, con imágenes y descripciones detalladas.
+- **Descripción de Proyectos**: Cada proyecto incluye una breve descripción que resalta los aspectos clave y el impacto del trabajo realizado.
+- **Diseño Responsivo**: El sitio está diseñado para ser completamente responsivo, asegurando una excelente experiencia en dispositivos móviles y de escritorio.
+- **Estilo Moderno**: Utilizando Tailwind CSS, el portfolio cuenta con un diseño limpio, moderno y profesional.
 
-Inside of your Astro project, you'll see the following folders and files:
+## Objetivo
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+El objetivo de este portfolio es proporcionar una plataforma donde Agustina pueda exhibir su trabajo de manera profesional, atraer nuevos clientes y compartir su pasión por la arquitectura con una audiencia más amplia.
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Cómo Navegar
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+- **Inicio**: Una vista general del portfolio y la trayectoria de Agustina.
+- **Proyectos**: Una galería de proyectos destacados con descripciones detalladas.
+- **Contacto**: Información de contacto para consultas profesionales y colaboraciones.
 
-Any static assets, like images, can be placed in the `public/` directory.
+## Contacto
 
-## 🧞 Commands
+Si deseas conocer más sobre Agustina o tienes alguna consulta, visita la sección de contacto 
 
-All commands are run from the root of the project, from a terminal:
+---
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Espero que disfrutes explorando este portfolio y descubras el talento y la dedicación que Agustina aporta a cada uno de sus proyectos.
