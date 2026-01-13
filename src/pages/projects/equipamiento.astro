@@ -1,0 +1,146 @@
+---
+// src/pages/projects/Equipamiento.astro
+import Layout from "../../layouts/Layout.astro";
+import ArrowDown from "../../components/ArrowDown.astro";
+
+const title = "Equipamiento";
+const srcImg = "/Equipamiento/equip8.webp";
+---
+
+<Layout {title}>
+  <main class="bg-zinc-50 overflow-x-hidden font-light">
+    <section class="h-screen flex flex-col relative px-4 md:px-20">
+      <div class="flex-1 flex justify-center items-center pt-10">
+        <div class="relative group w-full h-full max-h-[65vh] md:max-h-[80vh]">
+          <div
+            class="absolute -inset-2 border border-zinc-200 -z-10 translate-x-2 translate-y-2"
+          >
+          </div>
+          <img
+            src={srcImg}
+            class="h-full w-full object-cover shadow-2xl rounded-sm"
+            alt={title}
+          />
+        </div>
+      </div>
+
+      <div class="h-24 flex flex-col items-center justify-center">
+        <span class="text-[10px] uppercase tracking-[0.4em] text-zinc-400 mb-2"
+          >Proyecto 04</span
+        >
+        <a
+          href="#experiencia"
+          class="hover:text-naranja transition-colors duration-300 animate-bounce"
+        >
+          <ArrowDown />
+        </a>
+      </div>
+    </section>
+
+    <section
+      id="experiencia"
+      class="max-w-7xl mx-auto px-6 md:px-20 py-12 md:py-20"
+    >
+      <div
+        class="flex flex-col md:flex-row md:items-end justify-between border-b border-zinc-200 pb-10 mb-16"
+      >
+        <div>
+          <span
+            class="text-naranja font-bold text-sm tracking-[0.3em] uppercase"
+            >Mobiliario & Espacio</span
+          >
+          <h1
+            class="text-6xl md:text-8xl font-forum text-black mt-2 leading-none uppercase tracking-tighter"
+          >
+            {title}
+          </h1>
+        </div>
+        <p
+          class="text-zinc-400 text-xs md:text-sm mt-4 md:mt-0 tracking-[0.3em] uppercase italic font-light"
+        >
+          Madera & Metal / Flexibilidad
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start mb-24">
+        <div class="lg:col-span-4 lg:sticky lg:top-24">
+          <div class="bg-zinc-900 text-white p-8 md:p-10 shadow-xl">
+            <h3
+              class="font-forum text-2xl mb-6 text-naranja border-b border-naranja/30 pb-4"
+            >
+              El Desafío
+            </h3>
+            <p
+              class="text-zinc-300 leading-relaxed text-base md:text-lg text-pretty"
+            >
+              Diseñar un <span class="text-white font-medium"
+                >monoambiente multifuncional</span
+              > donde la madera y el metal definen la estructura.
+            </p>
+            <p
+              class="text-zinc-400 leading-relaxed text-sm md:text-base text-pretty mt-6 border-l border-zinc-700 pl-4 font-light"
+            >
+              El objetivo: satisfacer dormir, comer y asearse, integrando además
+              áreas para estudio, yoga y recepción de visitas en un mismo
+              espacio adaptable.
+            </p>
+          </div>
+        </div>
+
+        <div class="lg:col-span-8 flex flex-col gap-6">
+          <img
+            class="w-full h-auto rounded-lg shadow-md"
+            src="/Equipamiento/equip1.webp"
+            alt="Detalle de Equipamiento 1"
+          />
+          <div class="grid grid-cols-2 gap-6">
+            <img
+              class="w-full h-auto rounded-lg shadow-md"
+              src="/Equipamiento/equip2.webp"
+              alt="Detalle 2"
+            />
+            <img
+              class="w-full h-auto rounded-lg shadow-md"
+              src="/Equipamiento/equip3.webp"
+              alt="Detalle 3"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-20">
+        <div class="flex items-center gap-4 mb-12">
+          <h2
+            class="text-[10px] md:text-xs uppercase tracking-[0.5em] text-zinc-400 whitespace-nowrap"
+          >
+            Vistas Detalladas
+          </h2>
+          <div class="h-px w-full bg-zinc-200"></div>
+        </div>
+
+        <div class="columns-1 md:columns-2 gap-6 space-y-6">
+          <img
+            class="w-full rounded-xl hover:scale-[1.01] transition-transform duration-500 shadow-sm"
+            src="/Equipamiento/equip4.webp"
+            alt="Vista 4"
+          />
+          <img
+            class="w-full rounded-xl hover:scale-[1.01] transition-transform duration-500 shadow-sm"
+            src="/Equipamiento/equip5.webp"
+            alt="Vista 5"
+          />
+          <img
+            class="w-full rounded-xl hover:scale-[1.01] transition-transform duration-500 shadow-sm"
+            src="/Equipamiento/equip6.webp"
+            alt="Vista 6"
+          />
+          <img
+            class="w-full rounded-xl hover:scale-[1.01] transition-transform duration-500 shadow-sm border-t-8 border-zinc-100"
+            src="/Equipamiento/equip7.webp"
+            alt="Vista 7"
+          />
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>

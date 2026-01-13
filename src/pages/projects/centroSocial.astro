@@ -1,0 +1,160 @@
+---
+// src/pages/projects/FirstProject.astro
+import Layout from "../../layouts/Layout.astro";
+import ArrowDown from "../../components/ArrowDown.astro";
+
+const title = "Centro social de salud y deporte";
+const srcImg = "/cuartoProject.webp";
+---
+
+<Layout {title}>
+  <main class="bg-zinc-50 overflow-x-hidden">
+    <section class="h-screen flex flex-col relative px-4 md:px-20">
+      <div class="flex-1 flex justify-center items-center pt-10">
+        <div class="relative group w-full h-full max-h-[65vh] md:max-h-[80vh]">
+          <div
+            class="absolute -inset-2 border border-zinc-200 -z-10 translate-x-2 translate-y-2"
+          >
+          </div>
+          <img
+            src={srcImg}
+            class="h-full w-full object-cover shadow-2xl rounded-sm"
+            alt={title}
+          />
+        </div>
+      </div>
+
+      <div class="h-24 flex flex-col items-center justify-center">
+        <span class="text-[10px] uppercase tracking-[0.4em] text-zinc-400 mb-2"
+          >Proyecto 02</span
+        >
+        <a
+          href="#experiencia"
+          class="hover:text-naranja transition-colors duration-300 animate-bounce"
+        >
+          <ArrowDown />
+        </a>
+      </div>
+    </section>
+
+    <section
+      id="experiencia"
+      class="max-w-7xl mx-auto px-6 md:px-20 py-12 md:py-20"
+    >
+      <div
+        class="flex flex-col md:flex-row md:items-end justify-between border-b border-zinc-200 pb-10 mb-16"
+      >
+        <div class="max-w-3xl">
+          <span
+            class="text-naranja font-bold text-xs md:text-sm tracking-[0.3em] uppercase"
+            >Arquitectura Académica</span
+          >
+          <h1
+            class="text-4xl md:text-7xl lg:text-8xl font-forum text-black mt-2 leading-tight"
+          >
+            {title}
+          </h1>
+        </div>
+        <p
+          class="text-zinc-400 text-[10px] md:text-sm mt-4 md:mt-0 tracking-[0.2em] uppercase italic font-light"
+        >
+          Córdoba, Argentina
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+        <div
+          class="lg:col-span-7 overflow-hidden rounded-lg shadow-lg order-2 lg:order-1"
+        >
+          <img
+            class="w-full h-auto object-cover hover:scale-105 transition-transform duration-1000"
+            src="/CentroSocial/centro5.webp"
+            alt="Vista general del Centro Social"
+          />
+        </div>
+
+        <div class="lg:col-span-5 lg:sticky lg:top-24 order-1 lg:order-2">
+          <div class="bg-white p-8 md:p-12 shadow-sm border-t-4 border-naranja">
+            <h3
+              class="font-forum text-2xl mb-6 text-black uppercase tracking-tight"
+            >
+              Contexto Social
+            </h3>
+            <p
+              class="text-zinc-600 leading-relaxed text-base md:text-lg text-pretty font-light"
+            >
+              Realizado para la materia de <span
+                class="font-medium text-black italic">Arquitectura 5</span
+              >, este proyecto se sitúa en el Barrio Libertador, Córdoba.
+            </p>
+            <p
+              class="text-zinc-600 leading-relaxed text-base md:text-lg text-pretty font-light mt-4"
+            >
+              Dada la vulnerabilidad y distancia del sector, propusimos un
+              enfoque híbrido: cultura, deporte y salud. Un espacio que no solo
+              es edificio, sino un motor de cambio para la comunidad.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-20 md:mt-32">
+        <div class="flex items-center gap-4 mb-12">
+          <h2
+            class="text-[10px] md:text-xs uppercase tracking-[0.5em] text-zinc-400 whitespace-nowrap"
+          >
+            Planos y Vistas
+          </h2>
+          <div class="h-px w-full bg-zinc-200"></div>
+        </div>
+
+        <div class="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
+          <div class="group overflow-hidden rounded-md bg-zinc-100">
+            <img
+              class="w-full hover:scale-105 transition-all duration-700"
+              src="/CentroSocial/centro6.webp"
+              alt="Plano 1"
+            />
+          </div>
+          <div class="group overflow-hidden rounded-md bg-zinc-100">
+            <img
+              class="w-full hover:scale-105 transition-all duration-700"
+              src="/CentroSocial/centro2.webp"
+              alt="Plano 2"
+            />
+          </div>
+          <div
+            class="group overflow-hidden rounded-md bg-zinc-100 border-l-4 border-naranja/20"
+          >
+            <img
+              class="w-full hover:scale-105 transition-all duration-700"
+              src="/CentroSocial/centro3.webp"
+              alt="Plano 3"
+            />
+          </div>
+          <div class="group overflow-hidden rounded-md bg-zinc-100">
+            <img
+              class="w-full hover:scale-105 transition-all duration-700"
+              src="/CentroSocial/centro4.webp"
+              alt="Plano 4"
+            />
+          </div>
+          <div class="group overflow-hidden rounded-md bg-zinc-100">
+            <img
+              class="w-full hover:scale-105 transition-all duration-700"
+              src="/CentroSocial/centro1.webp"
+              alt="Plano 5"
+            />
+          </div>
+          <div class="group overflow-hidden rounded-md bg-zinc-100">
+            <img
+              class="w-full hover:scale-105 transition-all duration-700"
+              src="/CentroSocial/centro7.webp"
+              alt="Plano 6"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>

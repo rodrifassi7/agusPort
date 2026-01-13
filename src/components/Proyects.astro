@@ -1,0 +1,111 @@
+<style is:global>
+  html {
+    scroll-behavior: smooth;
+  }
+  .group img {
+    transition:
+      transform 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+      filter 0.5s ease;
+  }
+  .group:hover img {
+    filter: brightness(0.6) blur(2px);
+    transform: scale(1.03);
+  }
+  .group:hover .overlay {
+    opacity: 1;
+  }
+</style>
+
+<section class="py-20 bg-zinc-50">
+  <div
+    id="proyectos"
+    class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-6 md:px-20 max-w-7xl mx-auto"
+  >
+    <div
+      class="group relative overflow-hidden rounded-xl bg-zinc-200 aspect-[4/5]"
+    >
+      <a href="/projects/Preticor" class="h-full w-full">
+        <img
+          class="h-full w-full object-cover"
+          src="./Preticor/preticorPortada.webp"
+          alt="Preticor"
+        />
+        <div
+          class="overlay absolute inset-0 bg-black/40 flex flex-col justify-end p-6 opacity-0 transition-opacity duration-300"
+        >
+          <p class="text-white text-xl font-forum">Preticor</p>
+        </div>
+      </a>
+    </div>
+
+    <div
+      class="group relative overflow-hidden rounded-xl bg-zinc-200 aspect-[4/5]"
+    >
+      <a href="/projects/equipamiento" class="h-full w-full">
+        <img
+          class="h-full w-full object-cover"
+          src="./Equipamiento/equip8.webp"
+          alt="Equipamiento"
+        />
+        <div
+          class="overlay absolute inset-0 bg-black/40 flex flex-col justify-end p-6 opacity-0 transition-opacity duration-300"
+        >
+          <p class="text-white text-xl font-forum">Equipamiento</p>
+        </div>
+      </a>
+    </div>
+
+    <div
+      class="group relative overflow-hidden rounded-xl bg-zinc-200 aspect-[4/5]"
+    >
+      <a href="/projects/Tesis" class="h-full w-full">
+        <img
+          class="h-full w-full object-cover"
+          src="./Tesis/AXO.webp"
+          alt="Tesis"
+        />
+        <div
+          class="overlay absolute inset-0 bg-black/40 flex flex-col justify-end p-6 opacity-0 transition-opacity duration-300"
+        >
+          <p class="text-white text-xl font-forum">Tesis: Bienestar Modular</p>
+        </div>
+      </a>
+    </div>
+
+    <div
+      class="group relative overflow-hidden rounded-xl bg-zinc-200 aspect-[4/5]"
+    >
+      <a href="/projects/centroSocial" class="h-full w-full">
+        <img
+          class="h-full w-full object-cover"
+          src="./cuartoProject.webp"
+          alt="Centro Social"
+        />
+        <div
+          class="overlay absolute inset-0 bg-black/40 flex flex-col justify-end p-6 opacity-0 transition-opacity duration-300"
+        >
+          <p class="text-white text-xl font-forum">
+            Centro social de salud y deporte
+          </p>
+        </div>
+      </a>
+    </div>
+
+    <div
+      class="group relative overflow-hidden rounded-xl bg-zinc-200 aspect-[4/5]"
+    >
+      <a href="/projects/renders" class="h-full w-full">
+        <img
+          class="h-full w-full object-cover"
+          src="./RendersYGraficos/renYgraf4.webp"
+          alt="Renders"
+        />
+        <div
+          class="overlay absolute inset-0 bg-black/40 flex flex-col justify-end p-6 opacity-0 transition-opacity duration-300"
+        >
+          <p class="text-white text-xl font-forum">Renders y Gráficos</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
